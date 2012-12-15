@@ -21,6 +21,9 @@ if ( !defined('ABSPATH')) exit;
     </div><!-- end of #wrapper -->
     <?php responsive_wrapper_end(); // after wrapper hook ?>
 </div><!-- end of #container -->
+
+    </div><!-- end of #bg_container -->
+
 <?php responsive_container_end(); // after container hook ?>
 
 <div id="footer" class="clearfix">

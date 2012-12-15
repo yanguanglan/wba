@@ -63,7 +63,7 @@ if ( !defined('ABSPATH')) exit;
 				    echo '</p>'; 
 			// If not let's show dummy content for demo purposes
 			      } else { 
-			        echo '<p>';
+			        echo '<p class = "featured_paragraph">';
 				    echo __('Your title, subtitle and this very content is editable from Theme Option. Call to Action button and its destination link as well. Image on your right can be an image or even YouTube video if you like.','responsive');
 				    echo '</p>';
 				  }
@@ -92,9 +92,8 @@ if ( !defined('ABSPATH')) exit;
             
         </div><!-- end of .col-460 -->
 
-        <div id="featured-image" class="grid col-460 fit"> 
-                           
-            <?php $options = get_option('responsive_theme_options');
+        <!-- <div id="featured-image" class="grid col-460 fit"> 
+         <?php $options = get_option('responsive_theme_options');
 			// First let's check if image was set
 			    if (!empty($options['featured_content'])) {
 					echo do_shortcode($options['featured_content']);
@@ -104,9 +103,31 @@ if ( !defined('ABSPATH')) exit;
  				  }
 			?> 
                                    
-        </div><!-- end of #featured-image --> 
+        </div>--><!-- end of #featured-image --> 
+        
+            <div id="widgets" class="home-widgets">
+        <div class="grid-right latest_news">
+        <?php responsive_widgets(); // above widgets hook ?>
+            
+            <?php if (!dynamic_sidebar('home-widget-1')) : ?>
+            <div class="widget-wrapper">
+            
+                <div class="widget-title-home"><h3><?php _e('Home Widget 1', 'responsive'); ?></h3></div>
+                <div class="textwidget"><?php _e('This is your first home widget box. To edit please go to Appearance > Widgets and choose 6th widget from the top in area six called Home Widget 1. Title is also manageable from widgets as well.','responsive'); ?></div>
+            
+			</div><!-- end of .widget-wrapper -->
+			<?php endif; //end of home-widget-1 ?>
+
+        <?php responsive_widgets_end(); // responsive after widgets hook ?>
+        </div><!-- end of .col-300 -->
+            </div>
         
         </div><!-- end of #featured -->
+        
+        
+        
+        
+        
                
 <?php get_sidebar('home'); ?>
 <?php get_footer(); ?>

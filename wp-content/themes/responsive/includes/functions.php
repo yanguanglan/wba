@@ -214,11 +214,11 @@ function responsive_comment_list_pings( $comment ) {
 <?php }
 
 /**
- * Sets the post excerpt length to 40 words.
+ * Sets the post excerpt length to 20 words.
  * Adopted from Coraline
  */
 function responsive_excerpt_length($length) {
-    return 40;
+    return 20;
 }
 
 add_filter('excerpt_length', 'responsive_excerpt_length');
@@ -227,14 +227,14 @@ add_filter('excerpt_length', 'responsive_excerpt_length');
  * Returns a "Read more" link for excerpts
  */
 function responsive_read_more() {
-    return '<div class="read-more"><a href="' . get_permalink() . '">' . __('Read more &#8250;', 'responsive') . '</a></div><!-- end of .read-more -->';
+    //return '<div class="read-more"><a href="' . get_permalink() . '">' . __('Read more &#8250;', 'responsive') . '</a></div><!-- end of .read-more -->';
 }
 
 /**
  * Replaces "[...]" (appended to automatically generated excerpts) with an ellipsis and responsive_read_more_link().
  */
 function responsive_auto_excerpt_more($more) {
-    return '<span class="ellipsis">&hellip;</span>' . responsive_read_more();
+    //return '<span class="ellipsis">&hellip;</span>' . responsive_read_more();
 }
 
 add_filter('excerpt_more', 'responsive_auto_excerpt_more');
@@ -334,7 +334,7 @@ function responsive_breadcrumb_lists () {
       $thisCat = get_category($thisCat);
       $parentCat = get_category($thisCat->parent);
       if ($thisCat->parent != 0) echo(get_category_parents($parentCat, TRUE, ' ' . $chevron . ' '));
-      echo $before; printf( __( 'Archive for %s', 'responsive' ), single_cat_title('', false) ); $after;
+      echo $before; printf( __( '%s', 'responsive' ), single_cat_title('', false) ); $after;
  
     } elseif ( is_day() ) {
       echo '<a href="' . get_year_link(get_the_time('Y')) . '">' . get_the_time('Y') . '</a> ' . $chevron . ' ';

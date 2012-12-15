@@ -42,7 +42,9 @@ if ( !defined('ABSPATH')) exit;
 <body <?php body_class(); ?>>
                  
 <?php responsive_container(); // before container hook ?>
-<div id="container" class="hfeed">
+
+    <div id="bg_container">
+    <div id="container" class="hfeed">
          
     <?php responsive_header(); // before header hook ?>
     <div id="header">
@@ -92,8 +94,11 @@ if ( !defined('ABSPATH')) exit;
 					); 
 				?>
             <?php } ?>
- 
+
+    
     </div><!-- end of #header -->
+    
+
     <?php responsive_header_end(); // after header hook ?>
     
 	<?php responsive_wrapper(); // before wrapper ?>
