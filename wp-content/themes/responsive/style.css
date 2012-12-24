@@ -43,7 +43,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-    margin: 0;
+    /*margin: 0;*/
 	padding: 0;
 	vertical-align: baseline;
 }
@@ -110,6 +110,7 @@ hr.space {
 -------------------------------------------------------------- */
 html {
 	height:100%;
+        background-color: #efefef;
 }
 
 body {
@@ -271,6 +272,10 @@ sub {
 
 .col-460 {
 	width: 48.936170212766%;
+        margin-left: 100px;
+        background-image: url("images/featured_bg.gif");
+        background-repeat: no-repeat;
+        /*background-image: url("images/photo.gif");*/
 }
 
 .col-540 {
@@ -332,13 +337,13 @@ object {
 /* =Links
 -------------------------------------------------------------- */
 a {
-	color: #06c;
+	color: #009999;
 	font-weight: 400;
 	text-decoration: none;
 }
 
 a:hover {
-	color: #06c;
+	color: #009999;
 	text-decoration: underline;
 }
 
@@ -1058,13 +1063,13 @@ blockquote p {
 -------------------------------------------------------------- */
 h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 	font-weight: 700;
-	line-height: 1em;
+	/*line-height: 1em;*/
     word-wrap: break-word;
 }
 
 h1 {
 	color: #404040;
-	font-size: 2em;
+	font-size: 1.5em;
 }
 
 h2 {
@@ -1202,7 +1207,7 @@ form div {
 #wrapper {
 	-webkit-border-radius: 6px;
 	-moz-border-radius: 6px;
-	background-color: #fff;
+	/*background-color: #fff;*/
 	border: 0px solid #d6d6d6;
 	border-radius: 6px;
 	clear: both;
@@ -1219,8 +1224,19 @@ form div {
 }
 
 #header {
-	margin: 0;
+	margin: 20px 0 -30px 0;
+        padding: 50px 0 0 0;
+        
+        
+        height: 184px;
+        background-image: url("images/wba-logo.png");
+        background-repeat: no-repeat;
+        background-position:center bottom; 
+
+       
+        
 }
+
 
 #footer {
 	clear: both;
@@ -1237,14 +1253,17 @@ form div {
 /* =Header
 -------------------------------------------------------------- */
 #logo {
-	float: left;
-	margin: 100px 0 10px 0;
+	float: none;
+	margin: 0px 0 0 0;
+        padding-top: 104px;
+        text-align: center;
 }
 
 .site-name {
-	display: block;
+	display: none;
 	font-size: 2em;
 	padding-top: 20px;
+        
 }
 
 .site-name a {
@@ -1252,7 +1271,7 @@ form div {
 }
 
 .site-description {
-	display: block;
+	display: none;
 	font-size: 14px;
 	margin: 10px 33px 10px 0;
 }
@@ -1336,13 +1355,16 @@ form div {
 /* =Featured Content
 -------------------------------------------------------------- */
 #featured {
-	-moz-border-radius: 6px;
+	/*-moz-border-radius: 6px;
 	-webkit-border-radius: 6px;
 	background-color: #fff;
+        border-radius: 6px;*/
+
 	border: 0px solid #d6d6d6;
-	border-radius: 6px;
-	padding-bottom: 40px;
+	
+	padding-bottom: 0px;
 	width: 99.893617021277%;
+        border-bottom: 2px solid #009999;
 }
 
 /*#featured p {
@@ -1398,11 +1420,15 @@ form div {
 	clear: both;
 }
 
+.post-entry p{
+	margin: .5em 0;
+}
+
 .post-meta {
 	clear: both;
 	color: #9f9f9f;
 	font-size: 12px;
-	margin-bottom: 10px;
+	margin-bottom: 0px;
 }
 
 .post-edit {
@@ -1448,6 +1474,8 @@ form div {
 
 /* =Widgets
 -------------------------------------------------------------- */
+
+/* Old wrapper
 .widget-wrapper {
 	-webkit-border-radius: 0px;
     -moz-border-radius: 0px;
@@ -1456,6 +1484,17 @@ form div {
 	border-radius: 0px;
 	font-size: 13px;
 	margin: 0 0 20px;
+	padding: 20px;
+}*/
+
+.widget-wrapper {
+	-webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+	/*background-color: #fff;*/
+	border: 0px solid #005555;
+	border-radius: 0px;
+	font-size: 13px;
+	margin: 0 0 0px;
 	padding: 20px;
 }
 
@@ -1582,7 +1621,8 @@ form div {
 -------------------------------------------------------------- */
 .featured-title {
 	font-size:  30px;
-	letter-spacing: -1px;
+        line-height: 30px;
+	letter-spacing: 1px;
 	margin:  0;
 	padding-top: 40px;
 	text-align: center;
@@ -1657,6 +1697,8 @@ form div {
 /* =Header Menu (Primary)
 -------------------------------------------------------------- */
 .menu {
+    
+    
 	/*background-color: #585858;
 	background-image: -webkit-gradient(linear, left top, left bottom, from(#009999), to(#007575));
 	background-image: -webkit-linear-gradient(top, #009999, #007575);
@@ -1665,10 +1707,10 @@ form div {
 	background-image: -o-linear-gradient(top, #009999, #007575);
 	background-image: linear-gradient(top, #009999, #007575);*/
 	clear: both;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#585858, endColorstr=#3d3d3d);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#585858, endColorstr=#3d3d3d);
 	margin: 0 auto;
-        
-        border-top: 2px solid #005555;
+       
+        /*border-bottom: 2px solid #009999;*/
 }
 
 .menu, 
@@ -1677,12 +1719,13 @@ form div {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
+
 }
 
 .menu li {
 	border: 0;
 	display: block;
-	float: left;
+	float: right;
 	margin: 0;
 	padding: 0;
 	position: relative;
@@ -1755,17 +1798,21 @@ form div {
 	display: block;
 	font-size: 13px;
 	font-weight: 700;
-	height: 35px;
-	line-height: 35px;
+	height: 42px;
+	line-height: 60px;
 	margin: 0;
 	padding: 0 0.9em;
 	position: relative;
 	text-decoration: none;
 	/*text-shadow: 0 1px 1px #242424;*/
 }
-/*
+
 .menu a:hover {
-	background-color: #808080;
+    
+    background-image: url("images/chevron_hover.gif");
+    background-repeat: no-repeat;
+    background-position:center top; 
+	/*background-color: #808080;
 	background-image: -webkit-gradient(linear, left top, left bottom, from(#808080), to(#363636));
 	background-image: -webkit-linear-gradient(top, #808080, #363636);
 	background-image: -moz-linear-gradient(top, #808080, #363636);
@@ -1773,29 +1820,41 @@ form div {
 	background-image: -o-linear-gradient(top, #808080, #363636);
 	background-image: linear-gradient(top, #808080, #363636);
 	color: #fff;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#808080, endColorstr=#363636);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#808080, endColorstr=#363636);*/
 }
-*/
+
 
 .menu .current_page_item a,
 .menu .current-menu-item a {
-    color: #fff;
-	background-color: #005555;
+    color: #009999;
+    background-image: url("images/chevron.gif");
+    background-repeat: no-repeat;
+    background-position:center top; 
+
+	/*background-color: #005555;
         
-        /*background-color: #585858;
+        
+        
+        background-color: #585858;
 	background-image: -webkit-gradient(linear, left top, left bottom, from(#009999), to(#007575));
 	background-image: -webkit-linear-gradient(top, #009999, #007575);
 	background-image: -moz-linear-gradient(top, #009999, #007575);
 	background-image: -ms-linear-gradient(top, #009999, #007575);
 	background-image: -o-linear-gradient(top, #009999, #007575);
-	background-image: linear-gradient(top, #009999, #007575);*/
+	background-image: linear-gradient(top, #009999, #007575);
+*/
 }
 
 .home .menu .current_page_item a {
-    background: none;
-	background-color: #005555;
-    background-image: none;
-    filter: none;
+    color: #009999;
+    background-image: url("images/chevron.gif");
+    background-repeat: no-repeat;
+    background-position:center top; 
+}
+
+.menu-item-home a{
+    margin-left: -10px
+    
 }
 
 .menu li li {
@@ -2114,7 +2173,9 @@ form div {
 -------------------------------------------------------------- */
 .breadcrumb-list {
 	font-size: 12px;
-	padding: 0 0 0 0;
+	padding: 20px 0 10px 0;
+        margin: 0 0 -15px 0;
+        
 }
 
 /* =Comments
@@ -2847,30 +2908,69 @@ BDO[DIR="rtl"] {
 
 
 
-.menu_lower_bar {
-        height: 2px;
-	background-color: #005555;
-	/*background-image: -webkit-gradient(linear, left top, left bottom, from(#009999), to(#007575));
-	background-image: -webkit-linear-gradient(top, #009999, #007575);
-	background-image: -moz-linear-gradient(top, #009999, #007575);
-	background-image: -ms-linear-gradient(top, #009999, #007575);
-	background-image: -o-linear-gradient(top, #009999, #007575);
-	background-image: linear-gradient(top, #009999, #007575);*/
-	clear: both;
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#585858, endColorstr=#3d3d3d);
-	margin: 0 auto;
-}
-
 #bg_container{
-    background-image: url("images/background.gif");
+
+    background-image: url("images/background.png");
     background-repeat: no-repeat;
+    
+
     margin: 0 auto;
     width: 1500px;
+
      
 }
 
-.current-post-parent{
+
+.current-post-parent a{
+
+    color: #009999;
+    background-image: url("images/chevron.gif");
+    background-repeat: no-repeat;
+    background-position:center top; 
     
-    background-color: #005555;
+}
+
+.current-post-parent a:hover{
+
+
+    background-image: url("images/chevron.gif");
+
+    
+}
+
+/*.post-meta {
+    display: none;
+}*/
+
+a.blue-alt {
+	background-color: #1874cd; /* Dodger Blue */
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#0099cc), to(#007EA8));
+	background-image: -webkit-linear-gradient(top, #0099cc, #007EA8);
+	background-image: -moz-linear-gradient(top, #0099cc, #007EA8);
+	background-image: -ms-linear-gradient(top, #0099cc, #007EA8);
+	background-image: -o-linear-gradient(top, #0099cc, #007EA8);
+	background-image: linear-gradient(top, #0099cc, #007EA8);
+	border: 1px solid #115290;
+	color: #fff;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#4f9eea, endColorstr=#1874cd);
+	text-shadow: 0 1px 0 #115290;
+}
+
+a.blue-alt:hover {
+	background-color: #7db7f0;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#0099cc), to(#0099cc));
+	background-image: -webkit-linear-gradient(top, #0099cc, #0099cc);
+	background-image: -moz-linear-gradient(top, #0099cc, #0099cc);
+	background-image: -ms-linear-gradient(top, #0099cc, #0099cc);
+	background-image: -o-linear-gradient(top, #0099cc, #0099cc);
+	background-image: linear-gradient(top, #0099cc, #0099cc);
+	border: 1px solid #115290;
+	color: #fff;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7db7f0, endColorstr=#1874cd);
+	text-shadow: 0 1px 0 #115290;
+}
+
+.post-title{
+        margin: 22px 0 0 0;
     
 }

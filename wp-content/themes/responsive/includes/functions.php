@@ -218,7 +218,7 @@ function responsive_comment_list_pings( $comment ) {
  * Adopted from Coraline
  */
 function responsive_excerpt_length($length) {
-    return 20;
+    return 10;
 }
 
 add_filter('excerpt_length', 'responsive_excerpt_length');

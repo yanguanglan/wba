@@ -97,7 +97,7 @@ if ( !defined('ABSPATH')) exit;
 
     
     </div><!-- end of #header -->
-    
+
 
     <?php responsive_header_end(); // after header hook ?>
     
