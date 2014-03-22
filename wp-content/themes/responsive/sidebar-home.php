@@ -19,6 +19,8 @@ if ( !defined('ABSPATH')) exit;
  */
 ?>  
     <div id="widgets" class="home-widgets">
+        
+        
         <div class="grid col-300">
         <?php responsive_widgets(); // above widgets hook ?>
             

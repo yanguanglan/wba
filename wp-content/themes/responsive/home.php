@@ -107,18 +107,10 @@ if ( !defined('ABSPATH')) exit;
         
             <div id="widgets" class="home-widgets">
         <div class="grid-right latest_news">
-        <?php responsive_widgets(); // above widgets hook ?>
-            
-            <?php if (!dynamic_sidebar('home-widget-1')) : ?>
-            <div class="widget-wrapper">
-            
-                <div class="widget-title-home"><h3><?php _e('Home Widget 1', 'responsive'); ?></h3></div>
-                <div class="textwidget"><?php _e('This is your first home widget box. To edit please go to Appearance > Widgets and choose 6th widget from the top in area six called Home Widget 1. Title is also manageable from widgets as well.','responsive'); ?></div>
-            
-			</div><!-- end of .widget-wrapper -->
-			<?php endif; //end of home-widget-1 ?>
-
-        <?php responsive_widgets_end(); // responsive after widgets hook ?>
+        
+                        
+                        
+                        <?php get_sidebar('right'); ?>
         </div><!-- end of .col-300 -->
             </div>
         

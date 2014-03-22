@@ -48,7 +48,7 @@ if ( !defined('ABSPATH')) exit;
          
     <?php responsive_header(); // before header hook ?>
     <div id="header">
-    
+
         <?php if (has_nav_menu('top-menu', 'responsive')) { ?>
 	        <?php wp_nav_menu(array(
 				    'container'       => '',
@@ -102,5 +102,7 @@ if ( !defined('ABSPATH')) exit;
     <?php responsive_header_end(); // after header hook ?>
     
 	<?php responsive_wrapper(); // before wrapper ?>
-    <div id="wrapper" class="clearfix">
+    <!--<div id="wrapper" class="clearfix"> removed clearfix - Leon -->
+    
+        <div id="wrapper">
     <?php responsive_in_wrapper(); // wrapper hook ?>
