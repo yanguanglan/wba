@@ -1,0 +1,16 @@
+/*
+ Theme Name:   Leon's theme
+ Theme URI:    http://example.com/twenty-fourteen-child/
+ Description:  Responsive Child Theme
+ Author:       Leon Lau
+ Author URI:   http://leonlau.net.nz
+ Template:     responsive
+ Version:      1.0.0
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  reponsive-child
+*/
+
+@import url("../responsive/style.css");
+
+/* =Theme customization starts here
+-------------------------------------------------------------- */
