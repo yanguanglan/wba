@@ -79,10 +79,10 @@ if ( 'posts' == get_option( 'show_on_front' ) && $responsive_options['front_page
 				echo do_shortcode( wpautop( $responsive_options['home_content_area'] ) );
 			} else {
 				?>
-				<p>
+				<!--<p>
 					<?php _e( 'Your title, subtitle and this very content is editable from Theme Option. Call to Action button and its destination link as well. Image on your right can be an image
 					or even YouTube video if you like.', 'responsive' ); ?>
-				</p>
+				</p>-->
 
 			<?php
 			}
@@ -126,7 +126,7 @@ if ( 'posts' == get_option( 'show_on_front' ) && $responsive_options['front_page
 	</div><!-- end of #featured -->
 
 	<?php
-	get_sidebar( 'home' );
+	//get_sidebar( 'home' );
 	get_footer();
 }
 ?>
