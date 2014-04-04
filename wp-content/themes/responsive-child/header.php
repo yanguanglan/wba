@@ -101,8 +101,7 @@ if ( !defined('ABSPATH')) exit;
 
     <?php responsive_header_end(); // after header hook ?>
     
-	<?php responsive_wrapper(); // before wrapper ?>
-    <!--<div id="wrapper" class="clearfix"> removed clearfix - Leon -->
-    
-        <div id="wrapper">
-    <?php responsive_in_wrapper(); // wrapper hook ?>
+<?php responsive_wrapper(); // before wrapper container hook ?>
+	<div id="wrapper" class="clearfix">
+<?php responsive_wrapper_top(); // before wrapper content hook ?>
+<?php responsive_in_wrapper(); // wrapper hook ?>
