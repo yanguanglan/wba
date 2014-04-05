@@ -118,9 +118,20 @@ if ( 'posts' == get_option( 'show_on_front' ) && $responsive_options['front_page
             <div id="widgets" class="home-widgets">
         <div class="grid-right latest_news">
         
+ 		<div id="home_widget_1" class="grid fit">
+			<?php responsive_widgets(); // above widgets hook ?>
+
+			<?php if( !dynamic_sidebar( 'home-widget-1' ) ) : ?>
+				<div class="widget-wrapper">
+
+					<div class="widget-title-home"><h3><?php _e( 'Home Widget 1', 'responsive' ); ?></h3></div>
+					<div
+						class="textwidget"><?php _e( 'This is your first home widget box. To edit please go to Appearance > Widgets and choose 6th widget from the top in area 6 called Home Widget 1. Title is also manageable from widgets as well.', 'responsive' ); ?></div>
+
+				</div><!-- end of .widget-wrapper -->
+			<?php endif; //end of home-widget-1 ?>                       
                         
-                        
-                        <?php get_sidebar('right'); ?>
+
         </div><!-- end of .col-300 -->
             </div>
 	</div><!-- end of #featured -->

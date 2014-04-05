@@ -248,7 +248,8 @@ ul.menu > li:hover {
 }
 
 .menu .current_page_item a,
-.menu .current-menu-item a {
+.menu .current-menu-item a,
+.menu .current-page-ancestor a {
     color: #0099CC;
     background-color: transparent;
     background-image: url("images/chevron.gif");
@@ -376,6 +377,11 @@ ul.menu > li:hover {
 	padding: 0;
 	text-align: left;
 }
+
+#widget-title-one {
+	padding-bottom: 8px;	
+}
+
 .post_excerpt p {
 	font-size: 12px;
 	line-height: 14px;
@@ -409,7 +415,7 @@ ul.menu > li:hover {
 
 .posted_by{
     color: #999;
-    fe
+    
 }
 
 .post_excerpt p{
