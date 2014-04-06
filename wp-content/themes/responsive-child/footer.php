@@ -29,7 +29,7 @@ $responsive_options = responsive_get_options();
 <?php responsive_wrapper_bottom(); // after wrapper content hook ?>
 </div><!-- end of #wrapper -->
 <?php responsive_wrapper_end(); // after wrapper hook ?>
-</div><!-- end of #container -->
+
 <?php responsive_container_end(); // after container hook ?>
 
 <div id="footer" class="clearfix">
@@ -64,19 +64,24 @@ $responsive_options = responsive_get_options();
 		<!-- end of col-940 -->
 		<?php get_sidebar( 'colophon' ); ?>
 
+
+
+	</div>
+	<!-- end #footer-wrapper -->
+	
+</div><!-- end of #container -->
+
+	<?php responsive_footer_bottom(); ?>
+</div><!-- end #footer -->
+
 		<div class="copyright">
-			<?php esc_attr_e( '&copy;', 'responsive' ); ?> <?php echo date( 'Y' ); ?><a href="<?php echo home_url( '/' ) ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
-				<?php bloginfo( 'name' ); ?>
+			<?php esc_attr_e( '&copy;', 'responsive' ); ?> <?php echo date( 'Y' ); ?> <?php bloginfo( 'name' ); ?>
 			</a>
 		</div>
 		<!-- end of .copyright -->
 
 
-	</div>
-	<!-- end #footer-wrapper -->
 
-	<?php responsive_footer_bottom(); ?>
-</div><!-- end #footer -->
 <?php responsive_footer_after(); ?>
 
 <?php wp_footer(); ?>

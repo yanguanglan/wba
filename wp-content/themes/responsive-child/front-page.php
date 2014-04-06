@@ -91,7 +91,7 @@ if ( 'posts' == get_option( 'show_on_front' ) && $responsive_options['front_page
 
 				<div class="call-to-action">
 
-					<a href="<?php echo $responsive_options['cta_url']; ?>" class="blue button">
+					<a href="<?php echo $responsive_options['cta_url']; ?>" class="green button">
 						<?php
 						if ( isset( $responsive_options['cta_text'] ) && $db )
 							echo $responsive_options['cta_text'];
@@ -118,7 +118,7 @@ if ( 'posts' == get_option( 'show_on_front' ) && $responsive_options['front_page
             <div id="widgets" class="home-widgets">
         <div class="grid-right latest_news">
         
- 		<div id="home_widget_1" class="grid fit">
+ 		<div id="home_widget_1" class="grid-right fit">
 			<?php responsive_widgets(); // above widgets hook ?>
 
 			<?php if( !dynamic_sidebar( 'home-widget-1' ) ) : ?>
