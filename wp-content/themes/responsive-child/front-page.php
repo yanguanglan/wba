@@ -91,7 +91,7 @@ if ( 'posts' == get_option( 'show_on_front' ) && $responsive_options['front_page
 
 				<div class="call-to-action">
 
-					<a href="<?php echo $responsive_options['cta_url']; ?>" class="green button">
+					<a href="<?php echo $responsive_options['cta_url']; ?>" class="blue button">
 						<?php
 						if ( isset( $responsive_options['cta_text'] ) && $db )
 							echo $responsive_options['cta_text'];
