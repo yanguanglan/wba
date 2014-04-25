@@ -22,7 +22,7 @@ if( !defined( 'ABSPATH' ) ) {
 
 get_header(); ?>
 
-<div id="content" class="<?php echo implode( ' ', responsive_get_content_classes() ); ?>">
+<div id="contents" class="<?php echo implode( ' ', responsive_get_content_classes() ); ?>">
 
 	<?php get_template_part( 'loop-header' ); ?>
 
@@ -54,7 +54,9 @@ get_header(); ?>
 					<?php wp_link_pages( array( 'before' => '<div class="pagination">' . __( 'Pages:', 'responsive' ), 'after' => '</div>' ) ); ?>
 				</div>
 				<!-- end of .post-entry -->
-
+				
+				<!-- Custom back to link (Leon) -->
+				<div><a href="../">< Back to News</a></div>
 
 				<!-- end of .navigation -->
 

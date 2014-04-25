@@ -37,11 +37,13 @@ if( is_category() || is_tag() || is_author() || is_date() ) {
 			printf( __( 'Monthly Archives: %s', 'responsive' ), '<span>' . get_the_date( 'F Y' ) . '</span>' );
 		elseif( is_year() ) :
 			printf( __( 'Yearly Archives: %s', 'responsive' ), '<span>' . get_the_date( 'Y' ) . '</span>' );
-		else :
-			_e( 'All news', 'responsive' );
 		endif;
 		?>
 	</h6>
+	
+	<h1 class="title-archive">
+		<?php _e( 'News', 'responsive' ); ?>
+	</h1>
 <?php
 }
 
