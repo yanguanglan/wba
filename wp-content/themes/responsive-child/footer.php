@@ -39,7 +39,7 @@ $responsive_options = responsive_get_options();
 
 		<?php get_sidebar( 'footer' ); ?>
 
-		<div class="grid col-940">
+		<!--<div class="grid col-940">
 
 			<div class="grid col-540">
 				<?php if( has_nav_menu( 'footer-menu', 'responsive' ) ) { ?>
@@ -52,15 +52,15 @@ $responsive_options = responsive_get_options();
 					);
 					?>
 				<?php } ?>
-			</div>
-			<!-- end of col-540 -->
+			</div>			<!-- end of col-540 -->
 
-			<div class="grid col-380 fit">
+
+			<!--<div class="grid col-380 fit">
 				<?php echo responsive_get_social_icons() ?>
 			</div>
 			<!-- end of col-380 fit -->
 
-		</div>
+		<!--</div>
 		<!-- end of col-940 -->
 		<?php get_sidebar( 'colophon' ); ?>
 
