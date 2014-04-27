@@ -44,7 +44,7 @@ if ( !defined('ABSPATH')) exit;
 <?php responsive_container(); // before container hook ?>
 
     <div id="bg_container">
-    <div id="container" class="hfeed">
+    <div id="container" class="hfeed equalHeight">
          
     <?php responsive_header(); // before header hook ?>
     <div id="header">
@@ -102,6 +102,6 @@ if ( !defined('ABSPATH')) exit;
     <?php responsive_header_end(); // after header hook ?>
     
 <?php responsive_wrapper(); // before wrapper container hook ?>
-	<div id="wrapper" class="clearfix">
+	<div id="wrapper" class="clearfix equalHeight">
 <?php responsive_wrapper_top(); // before wrapper content hook ?>
 <?php responsive_in_wrapper(); // wrapper hook ?>

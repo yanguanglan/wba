@@ -32,7 +32,7 @@ $responsive_options = responsive_get_options();
 
 <?php responsive_container_end(); // after container hook ?>
 
-<div id="footer" class="clearfix">
+<div id="footer" class="clearfix equalHeight">
 	<?php responsive_footer_top(); ?>
 
 	<div id="footer-wrapper">
