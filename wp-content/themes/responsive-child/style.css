@@ -75,11 +75,10 @@ a:hover {
 }
 
 /* Footer widgets on the right side */
-.page-template-full-width-page-php #container {
 
-}
-
-.page-template-full-width-page-php #wrapper {
+.page-template-full-width-page-php #wrapper,
+.category #wrapper,
+.single #wrapper {
 	float: left;
 	width: 600px;
 	-webkit-border-radius: 4px;
@@ -94,7 +93,9 @@ a:hover {
 }
 
 
-.page-template-full-width-page-php #footer {
+.page-template-full-width-page-php #footer,
+.category #footer,
+.single #footer {
 	float: left;
 	width: 241px;
 	background: #fff;
@@ -111,107 +112,78 @@ a:hover {
 
 }    
 
-.page-template-full-width-page-php #footer_widget {
+.page-template-full-width-page-php #footer_widget,
+.category #footer_widget,
+.single #footer_widget {
 	width: 100%;
 	height: 100%;
 	margin: 0;
 	padding-top: 0px;
 }
 
-.page-template-full-width-page-php #footer_widget .col-300{
+.page-template-full-width-page-php #footer_widget .col-300,
+.category #footer_widget .col-300,
+.single #footer_widget .col-300 {
 	width: 202px;
 	margin-left: 20px !important;
 
 	
 }
 
-.page-template-full-width-page-php #footer-wrapper {
+.page-template-full-width-page-php #footer-wrapper,
+.category #footer-wrapper,
+.single #footer-wrapper {
 	margin: 0;
 	padding: 0;
 }
 
-.page-template-full-width-page-php .grid {
+.page-template-full-width-page-php .grid,
+.category .grid,
+.single .grid {
 	float: left;
 	margin-bottom: 0;
 	padding-top: 0;
 }
 
-
-#footer a {
-	color: #0099CC;
-	font-weight: 400;
-	text-decoration: none;
-}
-
-#footer a:hover {
-	color: #0099CC;	
-}
-
-.widget_text, .widget_links, .widget_em_widget {
-	height: 170px;
-	padding-left: 0px;
-	/*background: #333;
-	border: 1px solid #000;*/
-	
-	
-}
-
 .page-template-full-width-page-php .widget_text .widget-wrapper, 
 .page-template-full-width-page-php .widget_links .widget-wrapper, 
-.page-template-full-width-page-php .widget_em_widget .widget-wrapper {
+.page-template-full-width-page-php .widget_em_widget .widget-wrapper,
+.category .widget_text .widget-wrapper,
+.category .widget_links .widget-wrapper,
+.category .widget_em_widget .widget-wrapper,
+.single .widget_text .widget-wrapper,
+.single .widget_links .widget-wrapper,
+.single .widget_em_widget .widget-wrapper {
 	padding: 5px 0 0 0;		
 }
 
-.page-template-full-width-page-php .widget_text{
+.page-template-full-width-page-php .widget_text,
+.category .widget_text,
+.single .widget_text {
 	padding: 10px 0;
 }
 
-.page-template-full-width-page-php .widget_links{
+.page-template-full-width-page-php .widget_links,
+.category .widget_links, 
+.single .widget_links {
 	padding: 10px 0 0 0;
 	border-top: 1px dotted #d6d6d6;	
 	border-bottom: 1px dotted #d6d6d6;	
 	border-left: 0;
 	border-right: 0;
 }
-.page-template-full-width-page-php .widget_em_widget {
+.page-template-full-width-page-php .widget_em_widget,
+.category .widget_em_widget,
+.single .widget_em_widget {
 	padding: 10px 0;
 
 }
 
-.page-template-full-width-page-php .widget_em_widget .all-events-link {
+.page-template-full-width-page-php .widget_em_widget .all-events-link,
+.category .widget_em_widget .all-events-link,
+.single .widget_em_widget .all-events-link {
 	margin-top: 10px;
 	
-}
-
-.widget_links ul {
-	padding-left: 1.5em;
-	list-style-type: circle;
-}
-	
-.widget_links ul li {
-	padding-bottom: 5px;
-}
-
-.widget_em_widget ul {
-
-	list-style-type: none;
-	margin-left: -25px;
-}
-
-.widget_em_widget ul li{
-	padding-bottom: 0px;
-}
-
-.widget_em_widget ul li:nth-child(1) a {
-	font-size: 1.350em;
-}
-
-.widget_em_widget ul li:nth-child(1) {
-	padding-bottom: 10px;
-}
-
-.widget_em_widget ul li:nth-child(4) {
-	text-align: right;
 }
 
 /* End of footer widgets on the right side */
@@ -589,8 +561,19 @@ list-style-type: none; list-style-image: none;
 }
     
     
-
+.single-event #menu-main li:nth-child(2) a {
+	color: #0099CC;
+	background-image: url("images/chevron.gif");
+    background-repeat: no-repeat;
+    background-position: center top;		
+}
     
+.single-location #menu-main li:nth-child(2) a {
+	color: #0099CC;
+	background-image: url("images/chevron.gif");
+    background-repeat: no-repeat;
+    background-position: center top;		
+}    
 
 
 /* =Primary Main Menu IE Fixes

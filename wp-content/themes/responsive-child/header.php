@@ -44,7 +44,7 @@ if ( !defined('ABSPATH')) exit;
 <?php responsive_container(); // before container hook ?>
 
     <div id="bg_container">
-    <div id="container" class="hfeed equalHeight">
+    <div id="container" class="hfeed">
          
     <?php responsive_header(); // before header hook ?>
     <div id="header">
