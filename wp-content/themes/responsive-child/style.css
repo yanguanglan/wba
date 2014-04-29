@@ -561,14 +561,14 @@ list-style-type: none; list-style-image: none;
 }
     
     
-.single-event #menu-main li:nth-child(2) a {
+.single-event .menu li:nth-child(2) a {
 	color: #0099CC;
 	background-image: url("images/chevron.gif");
     background-repeat: no-repeat;
     background-position: center top;		
 }
     
-.single-location #menu-main li:nth-child(2) a {
+.single-location .menu li:nth-child(2) a {
 	color: #0099CC;
 	background-image: url("images/chevron.gif");
     background-repeat: no-repeat;
